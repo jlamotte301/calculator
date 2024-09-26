@@ -1,4 +1,4 @@
-'use strict';
+ 'use strict';
 
 exports.calculate = function(req, res) {
   req.app.use(function(err, req, res, next) {
@@ -18,7 +18,7 @@ exports.calculate = function(req, res) {
   };
 
   // Determine the operation
-  //Removed + signs from add function 
+  // Removed + signs from add function 
 
   if (! req.query.operation) {
     throw new Error("Unspecified operation");
